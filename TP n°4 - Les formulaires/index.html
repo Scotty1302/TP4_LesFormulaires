@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP4 HTML - Chouan Scotty</title>
+</head>
+<body>
+    <h1>Chouan Scotty - Les formulaires</h1>
+    <h2>Mon premier formulaire</h2>
+    <form action="#" method="POST">
+        <div>
+            <span>
+                <input type="radio" id="homme1" name="name_Identite1">
+                <label for="homme1">Homme</label>
+            </span>
+            <span>
+                <input type="radio" id="femme1" name="name_Identite1">
+                <label for="femme1">Femme</label>
+            </span>
+            <span>
+                <input type="radio" id="nonrenseigne1" name="name_Identite1">
+                <label for="nonrenseigne1">Non-renseigné</label>
+            </span>
+        </div>
+        <br>
+        <div>
+            <label for="Prenom1">Nom :</label>
+            <input type="text" name="name_Prenom1" id="Prenom1">
+        </div>
+        <br>
+        <div>
+            <label for="Nom1">Prénom :</label>
+            <input type="text" name="name_Nom1" id="Nom1">
+        </div>
+        <br>
+        <div>
+            <label for="Age1">Âge :</label>
+            <input type="number" name="name_Age1" id="Age1" min="16" max="99">
+        </div>
+        <br>
+        <div>
+            <label for="Email1">Adresse mail :</label>
+            <input type="email" id="Email1" pattern=".+@gmail\.com">
+        </div>
+        <br>
+        <div>
+            <label for="Message">Message :</label>
+            <textarea id="Message" name="name_Message" rows="1" cols="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="name_Checkbox1" id="Checkbox1">
+            <label for="Checkbox1">En cochant cette case, j'accepte les conditions<br>
+                relatives à l'utilisation de mes données personnelles.<br>
+                (accéder aux mentions légales)</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Envoyer le message">
+        </div>
+    </form>
+    
+    <hr>
+
+    <h2>Ensemble de champs</h2>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>MON SECOND FORMULAIRE</legend>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Identité</legend>
+                    <br>
+                    <div>
+                        <span>
+                            <input type="radio" id="homme2" name="name_Identite2">
+                            <label for="homme2">Homme</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="femme2" name="name_Identite2">
+                            <label for="femme2">Femme</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="nonrenseigne2" name="name_Identite2">
+                            <label for="nonrenseigne2">Non-renseigné</label>
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Nom2">Prénom :</label>
+                        <input type="text" name="name_Nom2" id="Nom2" placeholder="ex: Didier">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Prenom2">Nom :</label>
+                        <input type="text" name="name_Prenom2" id="Prenom2" placeholder="ex: Deschamps">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Age2">Âge :</label>
+                        <input type="number" name="name_Age2" id="Age2" min="16" max="99" placeholder="ex: 58">
+                    </div>
+                    <br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Situation personnelle</legend>
+                    <br>
+                    <div>
+                        <span>
+                            <input type="radio" id="celib" name="name_situation">
+                            <label for="celib">Célibataire</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="marie" name="name_situation">
+                            <label for="marie">Marié</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="veuf" name="name_situation">
+                            <label for="veuf">Veuf</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="union_libre" name="name_situation">
+                            <label for="union_libre">Union libre</label>
+                        </span>
+                    </div>
+                    <br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <br>
+                    <div>
+                        <label for="Phone">Tél :</label>
+                        <input type="tel" id="Phone" name="name_Phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="ex: 06-25-48-75-95">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Email2">Adresse mail :</label>
+                        <input type="email" id="Email2" pattern=".+@gmail\.com" placeholder="ex: d.d@gmail.com">
+                    </div>
+                    <br>
+                </fieldset>
+                <br>
+                <div>
+                    <input type="checkbox" name="name_Checkbox2" id="Checkbox2">
+                    <label for="Checkbox2">En cochant cette case je confirme que les données renseignées<br>
+                    sont exactes.</label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Transmettre mes coordonnées">
+                </div>
+                <br>
+            </div>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
